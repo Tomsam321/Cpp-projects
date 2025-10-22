@@ -71,7 +71,6 @@ private:
 
 public:
     void ejecutar() {
-        // Agregar dos mamíferos
         cout << "Ingrese datos para dos mamiferos:" << endl;
         for(int i = 0; i < 2; i++) {
             string nombre, colorPelo;
@@ -86,7 +85,6 @@ public:
             mamiferos.push_back(Mamifero(nombre, colorPelo, cantidadDientes));
         }
 
-        // Agregar dos aves
         cout << "\nIngrese datos para dos aves:" << endl;
         for(int i = 0; i < 2; i++) {
             string nombre, tipoPlumas;
@@ -101,7 +99,6 @@ public:
             aves.push_back(Ave(nombre, tipoPlumas, puedeVolar));
         }
 
-        // Agregar dos reptiles
         cout << "\nIngrese datos para dos reptiles:" << endl;
         for(int i = 0; i < 2; i++) {
             string nombre, tipoEscamas;
@@ -116,7 +113,6 @@ public:
             reptiles.push_back(Reptil(nombre, tipoEscamas, esVenenoso));
         }
 
-        // Mostrar todos
         cout << "\n=== Mamiferos ===\n";
         for(auto& m : mamiferos) {
             m.mostrarDatos();
@@ -135,7 +131,6 @@ public:
             cout << endl;
         }
 
-        // Cambiar propiedad de un mamífero
         if(!mamiferos.empty()) {
             cout << "\n--- Cambiando color de pelo del primer mamifero ---\n";
             string nuevoColor;
@@ -145,7 +140,6 @@ public:
             mamiferos[0].mostrarDatos();
         }
 
-        // Cambiar propiedad de un ave
         if(!aves.empty()) {
             cout << "\n--- Cambiando tipo de plumas de la primera ave ---\n";
             string nuevoTipo;
@@ -155,7 +149,6 @@ public:
             aves[0].mostrarDatos();
         }
 
-        // Cambiar propiedad de un reptil
         if(!reptiles.empty()) {
             cout << "\n--- Cambiando tipo de escamas del primer reptil ---\n";
             string nuevoTipo;
